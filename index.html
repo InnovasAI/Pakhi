@@ -15,9 +15,18 @@
             font-family: 'Hind Siliguri', sans-serif;
         }
         .hero-bg {
-            background-image: url('./image2.png');
+            background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url('./image2.png');
             background-size: cover;
             background-position: center;
+        }
+        
+        .launch-badge {
+            background: rgba(34, 197, 94, 0.2);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(34, 197, 94, 0.3);
+            padding: 0.5rem 1.5rem;
+            border-radius: 9999px;
+            display: inline-block;
         }
         
         /* Custom animations and effects */
@@ -132,7 +141,7 @@
 
             <!-- Hero Content -->
             <div class="text-center py-24 md:py-32 hero-content fade-in">
-                <p class="text-lg font-semibold text-green-400 mb-2 icon-bounce" data-lang-key="launchYear">Launching 2025</p>
+                <div class="launch-badge text-green-400 mb-6 font-semibold icon-bounce" data-lang-key="launchYear">Launching 2025</div>
                 <h2 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 section-title" data-lang-key="heroTitle">Pakhi - Ride Freely. Move Dhaka</h2>
                 <p class="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto mb-8" data-lang-key="heroSubtitle">Smarter. Electric scooter rides for every short trip. Safe, affordable, and eco-friendly.</p>
                 <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
@@ -149,101 +158,313 @@
     <!-- Main Content -->
     <main>
         <!-- What is Pakhi? Section -->
-        <section class="py-16 md:py-24 bg-white">
-            <div class="container mx-auto px-6 text-center mobile-padding">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4 section-title slide-up" data-lang-key="whatIsPakhiTitle">What is Pakhi?</h2>
-                <p class="max-w-2xl mx-auto text-gray-600 mb-12 slide-up" data-lang-key="whatIsPakhiSubtitle">Pakhi connects Dhaka with clean, fun, short-distance rides. Skip traffic, skip fuel, just ride.</p>
-                <div class="grid md:grid-cols-3 gap-8 card-grid">
+                <!-- What is Pakhi? Section -->
+        <section class="py-20 md:py-28 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
+            <!-- Background decorative elements -->
+            <div class="absolute top-0 left-0 w-64 h-64 bg-green-100 rounded-full -translate-x-32 -translate-y-32 opacity-30"></div>
+            <div class="absolute bottom-0 right-0 w-96 h-96 bg-green-50 rounded-full translate-x-48 translate-y-48 opacity-40"></div>
+            
+            <div class="container mx-auto px-6 text-center mobile-padding relative z-10">
+                <!-- Header Section -->
+                <div class="max-w-4xl mx-auto mb-16">
+                    <h2 class="text-4xl md:text-5xl font-extrabold mb-6 section-title slide-up bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent" data-lang-key="whatIsPakhiTitle">What is Pakhi?</h2>
+                    <p class="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed slide-up" data-lang-key="whatIsPakhiSubtitle">Pakhi connects Dhaka with clean, fun, short-distance rides. Skip traffic, skip fuel, just ride.</p>
+                </div>
+                
+                <!-- Features Grid -->
+                <div class="grid md:grid-cols-3 gap-8 lg:gap-12 max-w-6xl mx-auto">
                     <!-- Feature 1 -->
-                    <div class="p-8 border border-gray-200 rounded-3xl card-hover fade-in">
-                        <div class="bg-green-100 text-green-600 rounded-full h-16 w-16 flex items-center justify-center mx-auto mb-4 icon-bounce">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" /></svg>
+                    <div class="group p-8 lg:p-10 bg-white border border-gray-100 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 card-hover fade-in transform hover:scale-105">
+                        <div class="bg-gradient-to-br from-green-400 to-emerald-500 text-white rounded-2xl h-20 w-20 flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:shadow-xl transition-all duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" /></svg>
                         </div>
-                        <h3 class="text-xl font-semibold mb-2" data-lang-key="feature1Title">Tap & Unlock</h3>
-                        <p class="text-gray-600" data-lang-key="feature1Desc">Scan QR code with our app to unlock any scooter.</p>
+                        <h3 class="text-2xl font-bold mb-4 text-gray-800 group-hover:text-green-600 transition-colors duration-300" data-lang-key="feature1Title">Tap & Unlock</h3>
+                        <p class="text-gray-600 text-lg leading-relaxed" data-lang-key="feature1Desc">Scan QR code with our app to unlock any scooter.</p>
                     </div>
+                    
                     <!-- Feature 2 -->
-                    <div class="p-8 border border-gray-200 rounded-3xl card-hover fade-in">
-                        <div class="bg-green-100 text-green-600 rounded-full h-16 w-16 flex items-center justify-center mx-auto mb-4 icon-bounce">
-                             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                    <div class="group p-8 lg:p-10 bg-white border border-gray-100 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 card-hover fade-in transform hover:scale-105">
+                        <div class="bg-gradient-to-br from-blue-400 to-cyan-500 text-white rounded-2xl h-20 w-20 flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:shadow-xl transition-all duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
                         </div>
-                        <h3 class="text-xl font-semibold mb-2" data-lang-key="feature2Title">Ride & Park</h3>
-                        <p class="text-gray-600" data-lang-key="feature2Desc">Cruise through Dhaka streets and park responsibly.</p>
+                        <h3 class="text-2xl font-bold mb-4 text-gray-800 group-hover:text-blue-600 transition-colors duration-300" data-lang-key="feature2Title">Ride & Park</h3>
+                        <p class="text-gray-600 text-lg leading-relaxed" data-lang-key="feature2Desc">Cruise through Dhaka streets and park responsibly.</p>
                     </div>
+                    
                     <!-- Feature 3 -->
-                    <div class="p-8 border border-gray-200 rounded-3xl card-hover fade-in">
-                        <div class="bg-green-100 text-green-600 rounded-full h-16 w-16 flex items-center justify-center mx-auto mb-4 icon-bounce">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" /></svg>
+                    <div class="group p-8 lg:p-10 bg-white border border-gray-100 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 card-hover fade-in transform hover:scale-105">
+                        <div class="bg-gradient-to-br from-purple-400 to-pink-500 text-white rounded-2xl h-20 w-20 flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:shadow-xl transition-all duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" /></svg>
                         </div>
-                        <h3 class="text-xl font-semibold mb-2" data-lang-key="feature3Title">Pay & Go</h3>
-                        <p class="text-gray-600" data-lang-key="feature3Desc">Pay to unlock with bKash, Nagad, or card.</p>
+                        <h3 class="text-2xl font-bold mb-4 text-gray-800 group-hover:text-purple-600 transition-colors duration-300" data-lang-key="feature3Title">Pay & Go</h3>
+                        <p class="text-gray-600 text-lg leading-relaxed" data-lang-key="feature3Desc">Pay to unlock with bKash, Nagad, or card.</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- How It Works Section -->
-        <section class="py-16 md:py-24">
-            <div class="container mx-auto px-6 mobile-padding">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl md:text-4xl font-bold section-title slide-up" data-lang-key="howItWorksTitle">How It Works</h2>
+        <section class="py-20 md:py-28 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
+            <!-- Background decorative elements -->
+            <div class="absolute inset-0">
+                <svg class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full opacity-5" viewBox="0 0 100 100" fill="none">
+                    <path d="M20 20 Q50 10 80 20 Q90 50 80 80 Q50 90 20 80 Q10 50 20 20" stroke="currentColor" stroke-width="0.5" fill="none" class="text-green-300"/>
+                </svg>
+            </div>
+            
+            <div class="container mx-auto px-6 mobile-padding relative z-10">
+                <!-- Header Section -->
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-extrabold mb-6 section-title slide-up bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent" data-lang-key="howItWorksTitle">How It Works</h2>
+                    <p class="text-xl text-gray-600 max-w-2xl mx-auto">Simple steps to get you moving with Pakhi</p>
                 </div>
-                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-center card-grid">
-                    <!-- Step 1 -->
-                    <div class="flex flex-col items-center step-card fade-in">
-                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-green-500 text-white font-bold text-2xl mb-4 icon-bounce">1</div>
-                        <h3 class="text-xl font-semibold mb-2" data-lang-key="step1Title">Find a Pakhi nearby</h3>
-                        <p class="text-gray-600" data-lang-key="step1Desc">Use our app to locate available scooters near you.</p>
+                
+                <!-- Steps Flow -->
+                <div class="max-w-7xl mx-auto">
+                    <!-- Desktop Flow -->
+                    <div class="hidden lg:block relative">
+                        <!-- Progress Line -->
+                        <div class="absolute top-20 left-0 right-0 h-1 bg-gradient-to-r from-green-200 via-blue-200 via-purple-200 to-orange-200 rounded-full mx-32"></div>
+                        
+                        <!-- Steps Grid -->
+                        <div class="grid grid-cols-4 gap-8 text-center">
+                            <!-- Step 1 -->
+                            <div class="relative group fade-in">
+                                <div class="flex flex-col items-center">
+                                    <div class="relative z-10 flex items-center justify-center h-20 w-20 rounded-full bg-gradient-to-br from-green-400 to-emerald-500 text-white font-bold text-2xl mb-6 shadow-xl group-hover:shadow-2xl transition-all duration-500 group-hover:scale-110">
+                                        1
+                                        <div class="absolute -inset-2 bg-green-200 rounded-full opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
+                                    </div>
+                                    <div class="bg-white p-6 rounded-2xl shadow-lg group-hover:shadow-xl transition-all duration-500 border border-gray-100">
+                                        <h3 class="text-xl font-bold mb-3 text-gray-800 group-hover:text-green-600 transition-colors duration-300" data-lang-key="step1Title">Find a Pakhi nearby</h3>
+                                        <p class="text-gray-600 leading-relaxed" data-lang-key="step1Desc">Use our app to locate available scooters near you.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Step 2 -->
+                            <div class="relative group fade-in">
+                                <div class="flex flex-col items-center">
+                                    <div class="relative z-10 flex items-center justify-center h-20 w-20 rounded-full bg-gradient-to-br from-blue-400 to-cyan-500 text-white font-bold text-2xl mb-6 shadow-xl group-hover:shadow-2xl transition-all duration-500 group-hover:scale-110">
+                                        2
+                                        <div class="absolute -inset-2 bg-blue-200 rounded-full opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
+                                    </div>
+                                    <div class="bg-white p-6 rounded-2xl shadow-lg group-hover:shadow-xl transition-all duration-500 border border-gray-100">
+                                        <h3 class="text-xl font-bold mb-3 text-gray-800 group-hover:text-blue-600 transition-colors duration-300" data-lang-key="step2Title">Scan to unlock</h3>
+                                        <p class="text-gray-600 leading-relaxed" data-lang-key="step2Desc">Pay to unlock by scanning the QR code and start your ride.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Step 3 -->
+                            <div class="relative group fade-in">
+                                <div class="flex flex-col items-center">
+                                    <div class="relative z-10 flex items-center justify-center h-20 w-20 rounded-full bg-gradient-to-br from-purple-400 to-pink-500 text-white font-bold text-2xl mb-6 shadow-xl group-hover:shadow-2xl transition-all duration-500 group-hover:scale-110">
+                                        3
+                                        <div class="absolute -inset-2 bg-purple-200 rounded-full opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
+                                    </div>
+                                    <div class="bg-white p-6 rounded-2xl shadow-lg group-hover:shadow-xl transition-all duration-500 border border-gray-100">
+                                        <h3 class="text-xl font-bold mb-3 text-gray-800 group-hover:text-purple-600 transition-colors duration-300" data-lang-key="step3Title">Enjoy your ride</h3>
+                                        <p class="text-gray-600 leading-relaxed" data-lang-key="step3Desc">Cruise through Dhaka safely and efficiently.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Step 4 -->
+                            <div class="relative group fade-in">
+                                <div class="flex flex-col items-center">
+                                    <div class="relative z-10 flex items-center justify-center h-20 w-20 rounded-full bg-gradient-to-br from-orange-400 to-red-500 text-white font-bold text-2xl mb-6 shadow-xl group-hover:shadow-2xl transition-all duration-500 group-hover:scale-110">
+                                        4
+                                        <div class="absolute -inset-2 bg-orange-200 rounded-full opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
+                                    </div>
+                                    <div class="bg-white p-6 rounded-2xl shadow-lg group-hover:shadow-xl transition-all duration-500 border border-gray-100">
+                                        <h3 class="text-xl font-bold mb-3 text-gray-800 group-hover:text-orange-600 transition-colors duration-300" data-lang-key="step4Title">End ride & park</h3>
+                                        <p class="text-gray-600 leading-relaxed" data-lang-key="step4Desc">Park in designated areas when you reach your destination.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <!-- Step 2 -->
-                    <div class="flex flex-col items-center step-card fade-in">
-                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-green-500 text-white font-bold text-2xl mb-4 icon-bounce">2</div>
-                        <h3 class="text-xl font-semibold mb-2" data-lang-key="step2Title">Scan to unlock</h3>
-                        <p class="text-gray-600" data-lang-key="step2Desc">Pay to unlock by scanning the QR code and start your ride.</p>
-                    </div>
-                    <!-- Step 3 -->
-                    <div class="flex flex-col items-center step-card fade-in">
-                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-green-500 text-white font-bold text-2xl mb-4 icon-bounce">3</div>
-                        <h3 class="text-xl font-semibold mb-2" data-lang-key="step3Title">Enjoy your ride</h3>
-                        <p class="text-gray-600" data-lang-key="step3Desc">Cruise through Dhaka safely and efficiently.</p>
-                    </div>
-                    <!-- Step 4 -->
-                    <div class="flex flex-col items-center step-card fade-in">
-                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-green-500 text-white font-bold text-2xl mb-4 icon-bounce">4</div>
-                        <h3 class="text-xl font-semibold mb-2" data-lang-key="step4Title">End ride & park responsibly</h3>
-                        <p class="text-gray-600" data-lang-key="step4Desc">Park in designated areas when you reach your destination.</p>
+                    
+                    <!-- Mobile/Tablet Flow -->
+                    <div class="lg:hidden grid md:grid-cols-2 gap-8 text-center card-grid">
+                        <!-- Step 1 -->
+                        <div class="flex flex-col items-center step-card fade-in bg-white p-6 rounded-2xl shadow-lg">
+                            <div class="flex items-center justify-center h-16 w-16 rounded-full bg-gradient-to-br from-green-400 to-emerald-500 text-white font-bold text-2xl mb-4 shadow-lg">1</div>
+                            <h3 class="text-xl font-semibold mb-2" data-lang-key="step1Title">Find a Pakhi nearby</h3>
+                            <p class="text-gray-600" data-lang-key="step1Desc">Use our app to locate available scooters near you.</p>
+                        </div>
+                        
+                        <!-- Step 2 -->
+                        <div class="flex flex-col items-center step-card fade-in bg-white p-6 rounded-2xl shadow-lg">
+                            <div class="flex items-center justify-center h-16 w-16 rounded-full bg-gradient-to-br from-blue-400 to-cyan-500 text-white font-bold text-2xl mb-4 shadow-lg">2</div>
+                            <h3 class="text-xl font-semibold mb-2" data-lang-key="step2Title">Scan to unlock</h3>
+                            <p class="text-gray-600" data-lang-key="step2Desc">Pay to unlock by scanning the QR code and start your ride.</p>
+                        </div>
+                        
+                        <!-- Step 3 -->
+                        <div class="flex flex-col items-center step-card fade-in bg-white p-6 rounded-2xl shadow-lg">
+                            <div class="flex items-center justify-center h-16 w-16 rounded-full bg-gradient-to-br from-purple-400 to-pink-500 text-white font-bold text-2xl mb-4 shadow-lg">3</div>
+                            <h3 class="text-xl font-semibold mb-2" data-lang-key="step3Title">Enjoy your ride</h3>
+                            <p class="text-gray-600" data-lang-key="step3Desc">Cruise through Dhaka safely and efficiently.</p>
+                        </div>
+                        
+                        <!-- Step 4 -->
+                        <div class="flex flex-col items-center step-card fade-in bg-white p-6 rounded-2xl shadow-lg">
+                            <div class="flex items-center justify-center h-16 w-16 rounded-full bg-gradient-to-br from-orange-400 to-red-500 text-white font-bold text-2xl mb-4 shadow-lg">4</div>
+                            <h3 class="text-xl font-semibold mb-2" data-lang-key="step4Title">End ride & park</h3>
+                            <p class="text-gray-600" data-lang-key="step4Desc">Park in designated areas when you reach your destination.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Built for Dhaka Section -->
-        <section class="py-16 md:py-24 bg-white">
-            <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center mobile-padding md-grid-cols-2">
-                <div class="fade-in">
-                    <img src="./image1.png" class="rounded-3xl shadow-xl card-hover">
-                </div>
-                <div class="slide-up">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-4 section-title" data-lang-key="builtForDhakaTitle">Built for Dhaka</h2>
-                    <p class="text-gray-600 mb-8" data-lang-key="builtForDhakaDesc">In Dhaka, short trips are part of life — to school, to the market, to a friend's place. Pakhi is built for our streets, our people, and our way of moving.</p>
-                    <div class="space-y-6">
-                        <div class="p-6 bg-gray-50 rounded-3xl card-hover">
-                            <h3 class="text-xl font-semibold mb-3" data-lang-key="featuresMatterTitle">Features that matter:</h3>
-                            <ul class="list-disc list-inside text-gray-600 space-y-2">
-                                <li data-lang-key="featureList1">20 km/h Top Speed</li>
-                                <li data-lang-key="featureList2">Waterproof and Durable</li>
-                                <li data-lang-key="featureList3">Strong tires for all Dhaka roads</li>
-                                <li data-lang-key="featureList4">AI-powered stability for extra control</li>
-                            </ul>
+        <section class="py-20 md:py-28 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
+            <!-- Background decorative elements -->
+            <div class="absolute top-0 right-0 w-80 h-80 bg-green-100 rounded-full translate-x-40 -translate-y-40 opacity-20"></div>
+            <div class="absolute bottom-0 left-0 w-64 h-64 bg-blue-100 rounded-full -translate-x-32 translate-y-32 opacity-30"></div>
+            
+            <div class="container mx-auto px-6 grid md:grid-cols-2 gap-16 items-center mobile-padding md-grid-cols-2 relative z-10">
+                <!-- Image Section -->
+                <div class="fade-in order-2 md:order-1">
+                    <div class="relative">
+                        <img src="./image1.png" class="rounded-3xl shadow-2xl card-hover w-full">
+                        <!-- Floating badge -->
+                        <div class="absolute -top-4 -right-4 bg-green-500 text-white px-4 py-2 rounded-2xl shadow-lg font-semibold text-sm">
+                            <span class="flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                                Dhaka Ready
+                            </span>
                         </div>
-                        <div class="p-6 bg-green-50 rounded-3xl card-hover">
-                            <h3 class="text-xl font-semibold mb-3" data-lang-key="securityTitle">Security and Theft Control:</h3>
-                            <ul class="list-disc list-inside text-gray-600 space-y-2">
-                                <li data-lang-key="securityList1">Loud Auto Alarm when scooter is out of zone</li>
-                                <li data-lang-key="securityList2">Satellite powered GPS tracking</li>
-                                <li data-lang-key="securityList3">Audio recording on "Stolen Mode"</li>
-                                <li data-lang-key="securityList4">Tire lock when deactivated</li>
-                            </ul>
+                    </div>
+                </div>
+                
+                <!-- Content Section -->
+                <div class="slide-up order-1 md:order-2">
+                    <!-- Section Header -->
+                    <div class="mb-10">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="bg-gradient-to-br from-green-400 to-emerald-500 p-3 rounded-2xl shadow-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                                </svg>
+                            </div>
+                            <h2 class="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent" data-lang-key="builtForDhakaTitle">Built for Dhaka</h2>
+                        </div>
+                        <p class="text-xl text-gray-600 leading-relaxed max-w-lg" data-lang-key="builtForDhakaDesc">In Dhaka, short trips are part of life — to school, to the market, to a friend's place. Pakhi is built for our streets, our people, and our way of moving.</p>
+                    </div>
+                    
+                    <!-- Feature Cards -->
+                    <div class="space-y-8">
+                        <!-- Features that Matter Card -->
+                        <div class="group p-8 bg-gradient-to-br from-gray-50 to-gray-100 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-500 border border-gray-200">
+                            <div class="flex items-center gap-3 mb-6">
+                                <div class="bg-gradient-to-br from-blue-400 to-cyan-500 p-3 rounded-xl shadow-md group-hover:shadow-lg transition-shadow duration-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                    </svg>
+                                </div>
+                                <h3 class="text-2xl font-bold text-gray-800 group-hover:text-blue-600 transition-colors duration-300" data-lang-key="featuresMatterTitle">Features that matter:</h3>
+                            </div>
+                            <div class="grid gap-4">
+                                <!-- Feature 1 -->
+                                <div class="flex items-center gap-4 p-3 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                                    <div class="bg-orange-100 p-2 rounded-lg">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-orange-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                                        </svg>
+                                    </div>
+                                    <span class="text-gray-700 font-medium" data-lang-key="featureList1">20 km/h Top Speed</span>
+                                </div>
+                                
+                                <!-- Feature 2 -->
+                                <div class="flex items-center gap-4 p-3 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                                    <div class="bg-blue-100 p-2 rounded-lg">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                                        </svg>
+                                    </div>
+                                    <span class="text-gray-700 font-medium" data-lang-key="featureList2">Waterproof and Durable</span>
+                                </div>
+                                
+                                <!-- Feature 3 -->
+                                <div class="flex items-center gap-4 p-3 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                                    <div class="bg-purple-100 p-2 rounded-lg">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+                                        </svg>
+                                    </div>
+                                    <span class="text-gray-700 font-medium" data-lang-key="featureList3">Strong tires for all Dhaka roads</span>
+                                </div>
+                                
+                                <!-- Feature 4 -->
+                                <div class="flex items-center gap-4 p-3 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                                    <div class="bg-emerald-100 p-2 rounded-lg">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                                        </svg>
+                                    </div>
+                                    <span class="text-gray-700 font-medium" data-lang-key="featureList4">AI-powered stability for extra control</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Security and Theft Control Card -->
+                        <div class="group p-8 bg-gradient-to-br from-green-50 to-emerald-100 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-500 border border-green-200">
+                            <div class="flex items-center gap-3 mb-6">
+                                <div class="bg-gradient-to-br from-red-400 to-pink-500 p-3 rounded-xl shadow-md group-hover:shadow-lg transition-shadow duration-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                                    </svg>
+                                </div>
+                                <h3 class="text-2xl font-bold text-gray-800 group-hover:text-green-600 transition-colors duration-300" data-lang-key="securityTitle">Security and Theft Control:</h3>
+                            </div>
+                            <div class="grid gap-4">
+                                <!-- Security 1 -->
+                                <div class="flex items-center gap-4 p-3 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                                    <div class="bg-red-100 p-2 rounded-lg">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
+                                        </svg>
+                                    </div>
+                                    <span class="text-gray-700 font-medium" data-lang-key="securityList1">Loud Auto Alarm when scooter is out of zone</span>
+                                </div>
+                                
+                                <!-- Security 2 -->
+                                <div class="flex items-center gap-4 p-3 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                                    <div class="bg-green-100 p-2 rounded-lg">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                        </svg>
+                                    </div>
+                                    <span class="text-gray-700 font-medium" data-lang-key="securityList2">Satellite powered GPS tracking</span>
+                                </div>
+                                
+                                <!-- Security 3 -->
+                                <div class="flex items-center gap-4 p-3 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                                    <div class="bg-blue-100 p-2 rounded-lg">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
+                                        </svg>
+                                    </div>
+                                    <span class="text-gray-700 font-medium" data-lang-key="securityList3">Audio recording on "Stolen Mode"</span>
+                                </div>
+                                
+                                <!-- Security 4 -->
+                                <div class="flex items-center gap-4 p-3 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                                    <div class="bg-yellow-100 p-2 rounded-lg">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                                        </svg>
+                                    </div>
+                                    <span class="text-gray-700 font-medium" data-lang-key="securityList4">Tire lock when deactivated</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -251,34 +472,123 @@
         </section>
 
         <!-- Plan Your Route Section -->
-        <section class="py-16 md:py-24">
-            <div class="container mx-auto px-6 mobile-padding">
-                <div class="bg-white p-8 md:p-12 rounded-3xl shadow-2xl grid lg:grid-cols-2 gap-8 md:gap-12 card-hover">
-                    <!-- Route Planner Form -->
-                    <div class="slide-up">
-                        <h3 class="text-2xl font-bold mb-6" data-lang-key="planRouteTitle">Plan Your Route</h3>
-                        <form id="route-planner-form" class="space-y-4">
-                            <div>
-                                <label for="from" class="block text-sm font-medium text-gray-700" data-lang-key="fromLabel">From</label>
-                                <input type="text" id="from" data-lang-placeholder="fromPlaceholder" placeholder="e.g., Bashundhara R/A" class="mt-1 block w-full px-4 py-3 bg-white border border-gray-300 rounded-3xl shadow-sm focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500 transition duration-300">
+        <section class="py-20 md:py-28 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
+            <!-- Background decorative elements -->
+            <div class="absolute top-0 left-0 w-72 h-72 bg-green-100 rounded-full -translate-x-36 -translate-y-36 opacity-20"></div>
+            <div class="absolute bottom-0 right-0 w-96 h-96 bg-blue-50 rounded-full translate-x-48 translate-y-48 opacity-30"></div>
+            
+            <div class="container mx-auto px-6 mobile-padding relative z-10">
+                <!-- Section Header -->
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-extrabold mb-6 bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent" data-lang-key="planRouteTitle">Plan Your Route</h2>
+                    <p class="text-xl text-gray-600 max-w-2xl mx-auto">Calculate your savings and see how Pakhi beats other transport options</p>
+                </div>
+                
+                <div class="bg-white p-8 md:p-12 rounded-3xl shadow-2xl grid lg:grid-cols-2 gap-12 max-w-7xl mx-auto card-hover">
+                    <!-- Enhanced Route Planner Form -->
+                    <div class="slide-up space-y-8">
+                        <div class="flex items-center gap-3 mb-8">
+                            <div class="bg-gradient-to-br from-green-400 to-emerald-500 p-3 rounded-xl shadow-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+                                </svg>
                             </div>
-                            <div>
-                                <label for="to" class="block text-sm font-medium text-gray-700" data-lang-key="toLabel">To</label>
-                                <input type="text" id="to" data-lang-placeholder="toPlaceholder" placeholder="e.g., Gulshan 2" class="mt-1 block w-full px-4 py-3 bg-white border border-gray-300 rounded-3xl shadow-sm focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500 transition duration-300">
+                            <h3 class="text-2xl font-bold text-gray-800">Route Calculator</h3>
+                        </div>
+                        
+                        <form id="route-planner-form" class="space-y-6">
+                            <!-- From Input -->
+                            <div class="relative">
+                                <label for="from" class="block text-sm font-semibold text-gray-700 mb-3" data-lang-key="fromLabel">From</label>
+                                <div class="relative">
+                                    <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                        </svg>
+                                    </div>
+                                    <input type="text" id="from" data-lang-placeholder="fromPlaceholder" placeholder="e.g., Bashundhara R/A" class="block w-full pl-12 pr-12 py-4 text-lg bg-gray-50 border-2 border-gray-200 rounded-2xl focus:outline-none focus:ring-4 focus:ring-green-100 focus:border-green-500 transition-all duration-300 hover:border-gray-300">
+                                    <button type="button" id="use-location-btn" class="absolute inset-y-0 right-0 pr-4 flex items-center text-green-600 hover:text-green-700 transition-colors duration-300">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <p class="text-xs text-gray-500 mt-2">Click the arrow to use your current location</p>
                             </div>
-                            <div>
-                                <label for="distance" class="block text-sm font-medium text-gray-700" data-lang-key="distanceLabel">Estimated Distance (km)</label>
-                                <input type="number" id="distance" data-lang-placeholder="distancePlaceholder" placeholder="Enter distance in km" class="mt-1 block w-full px-4 py-3 bg-white border border-gray-300 rounded-3xl shadow-sm focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500 transition duration-300">
+                            
+                            <!-- Swap Button -->
+                            <div class="flex justify-center">
+                                <button type="button" id="swap-locations-btn" class="bg-gray-100 hover:bg-green-50 p-3 rounded-full transition-all duration-300 hover:scale-110 shadow-md hover:shadow-lg border-2 border-gray-200 hover:border-green-200">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600 hover:text-green-600 transition-colors duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4" />
+                                    </svg>
+                                </button>
                             </div>
-                            <button type="submit" class="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-6 rounded-3xl transition duration-300 button-hover" data-lang-key="calculateBtn">Calculate Savings</button>
+                            
+                            <!-- To Input -->
+                            <div class="relative">
+                                <label for="to" class="block text-sm font-semibold text-gray-700 mb-3" data-lang-key="toLabel">To</label>
+                                <div class="relative">
+                                    <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9" />
+                                        </svg>
+                                    </div>
+                                    <input type="text" id="to" data-lang-placeholder="toPlaceholder" placeholder="e.g., Gulshan 2" class="block w-full pl-12 pr-4 py-4 text-lg bg-gray-50 border-2 border-gray-200 rounded-2xl focus:outline-none focus:ring-4 focus:ring-green-100 focus:border-green-500 transition-all duration-300 hover:border-gray-300">
+                                </div>
+                            </div>
+                            
+                            <!-- Distance Input -->
+                            <div class="relative">
+                                <label for="distance" class="block text-sm font-semibold text-gray-700 mb-3" data-lang-key="distanceLabel">Estimated Distance (km)</label>
+                                <div class="relative">
+                                    <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-purple-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                                        </svg>
+                                    </div>
+                                    <input type="number" id="distance" data-lang-placeholder="distancePlaceholder" placeholder="Enter distance in km" step="0.1" min="0.1" max="50" class="block w-full pl-12 pr-16 py-4 text-lg bg-gray-50 border-2 border-gray-200 rounded-2xl focus:outline-none focus:ring-4 focus:ring-green-100 focus:border-green-500 transition-all duration-300 hover:border-gray-300">
+                                    <div class="absolute inset-y-0 right-0 pr-4 flex items-center pointer-events-none">
+                                        <span class="text-gray-500 font-medium">km</span>
+                                    </div>
+                                </div>
+                                <p class="text-xs text-gray-500 mt-2">Typical short trips in Dhaka: 1-5 km</p>
+                            </div>
+                            
+                            <!-- Calculate Button -->
+                            <button type="submit" class="w-full bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white font-bold py-5 px-8 rounded-2xl text-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-green-200" data-lang-key="calculateBtn">
+                                <span class="flex items-center justify-center gap-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                                    </svg>
+                                    Calculate My Savings
+                                </span>
+                            </button>
                         </form>
                     </div>
-                    <!-- Cost Comparison Display -->
-                    <div class="flex flex-col items-center justify-center bg-gray-50 p-8 rounded-3xl fade-in">
-                        <h3 class="text-2xl font-bold mb-4" data-lang-key="costComparisonTitle">Cost Comparison</h3>
-                        <div id="cost-comparison-result" class="text-center">
-                             <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-gray-400 mx-auto mb-4 icon-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" /></svg>
-                            <p class="text-gray-500" data-lang-key="costComparisonPlaceholder">Enter your route details to see cost comparison.</p>
+                    
+                    <!-- Enhanced Cost Comparison Display -->
+                    <div class="fade-in">
+                        <div id="cost-comparison-result" class="h-full min-h-[400px]">
+                            <!-- Empty State -->
+                            <div id="empty-state" class="flex flex-col items-center justify-center h-full bg-gradient-to-br from-gray-50 to-gray-100 p-8 rounded-2xl border-2 border-dashed border-gray-200">
+                                <div class="mb-6">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24 text-gray-400 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                                    </svg>
+                                </div>
+                                <h3 class="text-2xl font-bold text-gray-600 mb-4" data-lang-key="costComparisonTitle">Cost Comparison</h3>
+                                <p class="text-gray-500 text-center max-w-sm leading-relaxed" data-lang-key="costComparisonPlaceholder">Enter your route details to compare costs and see how much you can save with Pakhi!</p>
+                                <div class="mt-6 flex items-center gap-2 text-sm text-gray-400">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                    <span>Instant calculation • Real savings</span>
+                                </div>
+                            </div>
+                            
+                            <!-- Results will be inserted here -->
                         </div>
                     </div>
                 </div>
@@ -286,55 +596,193 @@
         </section>
 
         <!-- Why Choose Pakhi? Section -->
-        <section class="py-16 md:py-24 bg-white">
-            <div class="container mx-auto px-6 mobile-padding">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl md:text-4xl font-bold section-title slide-up" data-lang-key="whyChooseTitle">Why Choose Pakhi?</h2>
+        <section class="py-20 md:py-28 bg-gradient-to-br from-white to-gray-50 relative overflow-hidden">
+            <!-- Background decorative elements -->
+            <div class="absolute top-0 left-0 w-80 h-80 bg-green-100 rounded-full -translate-x-40 -translate-y-40 opacity-20"></div>
+            <div class="absolute bottom-0 right-0 w-96 h-96 bg-blue-50 rounded-full translate-x-48 translate-y-48 opacity-30"></div>
+            
+            <div class="container mx-auto px-6 mobile-padding relative z-10">
+                <!-- Section Header -->
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-extrabold mb-6 bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent slide-up" data-lang-key="whyChooseTitle">Why Choose Pakhi?</h2>
+                    <p class="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">Join thousands who are choosing smarter, cleaner transportation</p>
                 </div>
-                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 card-grid">
-                    <!-- Reason 1 -->
-                    <div class="text-center p-6 bg-gray-50 rounded-3xl card-hover fade-in">
-                        <div class="text-green-500 mb-4 icon-bounce">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                
+                <!-- Benefits Grid -->
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10 max-w-7xl mx-auto">
+                    <!-- Reason 1: Save Time -->
+                    <div class="group bg-white p-8 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 card-hover fade-in border border-gray-100 hover:border-green-200">
+                        <div class="text-center">
+                            <div class="bg-gradient-to-br from-blue-100 to-cyan-100 w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-blue-600 group-hover:text-cyan-600 transition-colors duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-bold mb-4 text-gray-800 group-hover:text-blue-600 transition-colors duration-300" data-lang-key="reason1Title">Save Time</h3>
+                            <p class="text-gray-600 leading-relaxed" data-lang-key="reason1Desc">Beat the traffic in busy Dhaka streets.</p>
+                            <div class="mt-6 flex items-center justify-center gap-2 text-sm text-blue-600 font-semibold">
+                                <span>⚡</span>
+                                <span>50% faster than CNG</span>
+                            </div>
                         </div>
-                        <h3 class="text-xl font-semibold mb-2" data-lang-key="reason1Title">Save Time</h3>
-                        <p class="text-gray-600" data-lang-key="reason1Desc">Beat the traffic in busy Dhaka streets.</p>
                     </div>
-                    <!-- Reason 2 -->
-                    <div class="text-center p-6 bg-gray-50 rounded-3xl card-hover fade-in">
-                         <div class="text-green-500 mb-4 icon-bounce">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+                    
+                    <!-- Reason 2: Affordable -->
+                    <div class="group bg-white p-8 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 card-hover fade-in border border-gray-100 hover:border-green-200">
+                        <div class="text-center">
+                            <div class="bg-gradient-to-br from-green-100 to-emerald-100 w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-green-600 group-hover:text-emerald-600 transition-colors duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-bold mb-4 text-gray-800 group-hover:text-green-600 transition-colors duration-300" data-lang-key="reason2Title">Affordable</h3>
+                            <p class="text-gray-600 leading-relaxed" data-lang-key="reason2Desc">Less than a CNG for short trips.</p>
+                            <div class="mt-6 flex items-center justify-center gap-2 text-sm text-green-600 font-semibold">
+                                <span>💰</span>
+                                <span>Up to 40% savings</span>
+                            </div>
                         </div>
-                        <h3 class="text-xl font-semibold mb-2" data-lang-key="reason2Title">Affordable</h3>
-                        <p class="text-gray-600" data-lang-key="reason2Desc">Less than a CNG for short trips.</p>
                     </div>
-                    <!-- Reason 3 -->
-                    <div class="text-center p-6 bg-gray-50 rounded-3xl card-hover fade-in">
-                        <div class="text-green-500 mb-4 icon-bounce">
-                             <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                    
+                    <!-- Reason 3: Eco-Friendly -->
+                    <div class="group bg-white p-8 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 card-hover fade-in border border-gray-100 hover:border-green-200">
+                        <div class="text-center">
+                            <div class="bg-gradient-to-br from-emerald-100 to-teal-100 w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-emerald-600 group-hover:text-teal-600 transition-colors duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-bold mb-4 text-gray-800 group-hover:text-emerald-600 transition-colors duration-300" data-lang-key="reason3Title">Eco-Friendly</h3>
+                            <p class="text-gray-600 leading-relaxed" data-lang-key="reason3Desc">100% electric, zero emissions.</p>
+                            <div class="mt-6 flex items-center justify-center gap-2 text-sm text-emerald-600 font-semibold">
+                                <span>🌱</span>
+                                <span>Clean air for Dhaka</span>
+                            </div>
                         </div>
-                        <h3 class="text-xl font-semibold mb-2" data-lang-key="reason3Title">Eco-Friendly</h3>
-                        <p class="text-gray-600" data-lang-key="reason3Desc">100% electric, zero emissions.</p>
                     </div>
-                    <!-- Reason 4 -->
-                    <div class="text-center p-6 bg-gray-50 rounded-3xl card-hover fade-in">
-                        <div class="text-green-500 mb-4 icon-bounce">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+                    
+                    <!-- Reason 4: Local Partnerships -->
+                    <div class="group bg-white p-8 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 card-hover fade-in border border-gray-100 hover:border-green-200">
+                        <div class="text-center">
+                            <div class="bg-gradient-to-br from-purple-100 to-pink-100 w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-purple-600 group-hover:text-pink-600 transition-colors duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-bold mb-4 text-gray-800 group-hover:text-purple-600 transition-colors duration-300" data-lang-key="reason4Title">Local Partnerships</h3>
+                            <p class="text-gray-600 leading-relaxed" data-lang-key="reason4Desc">Supporting local workshops & charging hubs.</p>
+                            <div class="mt-6 flex items-center justify-center gap-2 text-sm text-purple-600 font-semibold">
+                                <span>🤝</span>
+                                <span>Built by locals</span>
+                            </div>
                         </div>
-                        <h3 class="text-xl font-semibold mb-2" data-lang-key="reason4Title">Local Partnerships</h3>
-                        <p class="text-gray-600" data-lang-key="reason4Desc">Supporting local workshops & charging hubs.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Early Access CTA Section -->
-        <section id="early-access" class="py-16 md:py-24 bg-green-600 text-white">
-            <div class="container mx-auto px-6 text-center mobile-padding slide-up">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4 section-title" data-lang-key="ctaTitle">Be the First to Ride Pakhi in Dhaka</h2>
-                <p class="text-lg text-green-100 mb-6" data-lang-key="ctaSubtitle">Sign up now & get 3 free rides when we launch.</p>
-                <p class="font-semibold mb-8 icon-bounce" data-lang-key="ctaCounter">🚀 1500+ people have already joined Pakhi's early access list!</p>
-                <a href="#" class="bg-white text-green-600 font-bold py-4 px-10 rounded-full text-lg hover:bg-gray-100 transition duration-300 button-hover mobile-cta-btn inline-block max-w-full" data-lang-key="ctaBtn">Join the First Flight - PAKHI Early Access</a>
+        <!-- Enhanced Early Access CTA Section -->
+        <section id="early-access" class="relative py-20 md:py-28 bg-gradient-to-br from-green-500 via-green-600 to-emerald-700 text-white overflow-hidden">
+            <!-- Background Pattern -->
+            <div class="absolute inset-0 opacity-10">
+                <svg class="w-full h-full" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <pattern id="scooter-pattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                            <path d="M5 10 L10 5 L15 10 L10 15 Z" stroke="currentColor" stroke-width="0.5" fill="none"/>
+                        </pattern>
+                    </defs>
+                    <rect width="100" height="100" fill="url(#scooter-pattern)"/>
+                </svg>
+            </div>
+            
+            <!-- Floating elements -->
+            <div class="absolute top-10 left-10 w-32 h-32 bg-white bg-opacity-10 rounded-full blur-xl"></div>
+            <div class="absolute bottom-10 right-10 w-40 h-40 bg-emerald-300 bg-opacity-20 rounded-full blur-2xl"></div>
+            <div class="absolute top-1/2 right-20 w-24 h-24 bg-green-300 bg-opacity-15 rounded-full blur-lg"></div>
+            
+            <div class="container mx-auto px-6 text-center mobile-padding relative z-10">
+                <div class="max-w-4xl mx-auto slide-up">
+                    <!-- Social Proof Badge -->
+                    <div class="inline-flex items-center gap-3 bg-white bg-opacity-20 backdrop-blur-sm px-6 py-3 rounded-full text-sm font-semibold mb-8 border border-white border-opacity-30">
+                        <div class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-300" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                            </svg>
+                            <span class="text-yellow-100">🚀 1500+ people already joined!</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Main Headline -->
+                    <h2 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6" data-lang-key="ctaTitle">Be the First to Ride Pakhi in Dhaka</h2>
+                    
+                    <!-- Supporting Text -->
+                    <p class="text-xl md:text-2xl text-green-100 mb-4 leading-relaxed" data-lang-key="ctaSubtitle">Sign up now & get 3 free rides when we launch.</p>
+                    
+                    <!-- Launch Benefits -->
+                    <div class="flex flex-wrap justify-center gap-6 mb-10 text-green-100">
+                        <div class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <span>3 Free Rides</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <span>Early Access</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <span>Launch Updates</span>
+                        </div>
+                    </div>
+                    
+                    <!-- CTA Button -->
+                    <div class="flex flex-col sm:flex-row justify-center items-center gap-4 mb-8">
+                        <a href="#" class="group bg-white text-green-600 font-bold py-5 px-10 rounded-2xl text-lg md:text-xl hover:bg-gray-50 transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 mobile-cta-btn inline-flex items-center gap-3 min-w-[280px] justify-center" data-lang-key="ctaBtn">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 group-hover:rotate-12 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                            </svg>
+                            Join the First Flight - PAKHI Early Access
+                        </a>
+                    </div>
+                    
+                    <!-- Urgency & Social Proof -->
+                    <div class="flex flex-col sm:flex-row justify-center items-center gap-6 text-sm text-green-100">
+                        <div class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <span>Limited spots available</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                            </svg>
+                            <span>No payment required</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 1.26a2 2 0 001.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                            <span>Instant confirmation</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Decorative Scooter Illustration -->
+                <div class="absolute bottom-0 right-0 opacity-20 hidden lg:block">
+                    <svg width="200" height="150" viewBox="0 0 200 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M40 120 Q60 80 80 120 Q100 80 120 120 Q140 80 160 120" stroke="currentColor" stroke-width="3" fill="none"/>
+                        <circle cx="50" cy="120" r="15" stroke="currentColor" stroke-width="3" fill="none"/>
+                        <circle cx="130" cy="120" r="15" stroke="currentColor" stroke-width="3" fill="none"/>
+                        <path d="M50 105 L90 70 L130 105" stroke="currentColor" stroke-width="3" fill="none"/>
+                        <path d="M85 70 L85 50 L95 45 L105 50 L105 65" stroke="currentColor" stroke-width="3" fill="none"/>
+                    </svg>
+                </div>
             </div>
         </section>
     </main>
@@ -428,7 +876,7 @@
                 step2Desc: "Pay to unlock by scanning the QR code and start your ride.",
                 step3Title: "Enjoy your ride",
                 step3Desc: "Cruise through Dhaka safely and efficiently.",
-                step4Title: "End ride & park responsibly",
+                step4Title: "End ride & park",
                 step4Desc: "Park in designated areas when you reach your destination.",
                 builtForDhakaTitle: "Built for Dhaka",
                 builtForDhakaDesc: "In Dhaka, short trips are part of life — to school, to the market, to a friend's place. Pakhi is built for our streets, our people, and our way of moving.",
@@ -593,44 +1041,204 @@
         // --- Route Planner Logic ---
         const routePlannerForm = document.getElementById('route-planner-form');
         const costResultDiv = document.getElementById('cost-comparison-result');
+        const swapBtn = document.getElementById('swap-locations-btn');
+        const useLocationBtn = document.getElementById('use-location-btn');
+        const fromInput = document.getElementById('from');
+        const toInput = document.getElementById('to');
+
+        // Swap locations functionality
+        swapBtn.addEventListener('click', () => {
+            const fromValue = fromInput.value;
+            fromInput.value = toInput.value;
+            toInput.value = fromValue;
+            
+            // Add animation effect
+            swapBtn.style.transform = 'rotate(180deg)';
+            setTimeout(() => {
+                swapBtn.style.transform = 'rotate(0deg)';
+            }, 300);
+        });
+
+        // Use current location functionality
+        useLocationBtn.addEventListener('click', () => {
+            if (navigator.geolocation) {
+                useLocationBtn.innerHTML = '<svg class="animate-spin h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg>';
+                
+                navigator.geolocation.getCurrentPosition(
+                    (position) => {
+                        // In a real app, you'd reverse geocode these coordinates
+                        fromInput.value = 'Current Location';
+                        useLocationBtn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>';
+                        setTimeout(() => {
+                            useLocationBtn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" /></svg>';
+                        }, 2000);
+                    },
+                    (error) => {
+                        alert('Unable to get your location. Please enter manually.');
+                        useLocationBtn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" /></svg>';
+                    }
+                );
+            } else {
+                alert('Geolocation is not supported by this browser.');
+            }
+        });
 
         routePlannerForm.addEventListener('submit', (e) => {
             e.preventDefault();
             const distance = parseFloat(document.getElementById('distance').value);
+            const from = fromInput.value.trim();
+            const to = toInput.value.trim();
 
-            if (isNaN(distance) || distance <= 0) {
+            if (!from || !to) {
                 costResultDiv.innerHTML = `
-                    <p class="text-red-500">Please enter a valid distance.</p>
+                    <div class="flex flex-col items-center justify-center h-full bg-red-50 p-8 rounded-2xl border-2 border-red-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-red-400 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <p class="text-red-600 font-semibold">Please fill in both locations.</p>
+                    </div>
                 `;
                 return;
             }
 
-            // Constants for calculation (as per PDF)
+            if (isNaN(distance) || distance <= 0) {
+                costResultDiv.innerHTML = `
+                    <div class="flex flex-col items-center justify-center h-full bg-red-50 p-8 rounded-2xl border-2 border-red-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-red-400 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <p class="text-red-600 font-semibold">Please enter a valid distance.</p>
+                    </div>
+                `;
+                return;
+            }
+
+            // Constants for calculation
             const pakhiUnlockFee = 20;
             const pakhiPerMinute = 3;
             const avgSpeedKmh = 15;
             const cngPerKm = 25;
+            const ridesharePerKm = 35;
+            const busPerKm = 8;
 
             // Calculations
             const travelTimeMinutes = (distance / avgSpeedKmh) * 60;
             const pakhiCost = pakhiUnlockFee + (travelTimeMinutes * pakhiPerMinute);
             const cngCost = distance * cngPerKm;
+            const rideshareCost = distance * ridesharePerKm;
+            const busCost = distance * busPerKm;
             const savings = cngCost - pakhiCost;
+            const co2Saved = (distance * 0.12).toFixed(1); // kg CO2 saved vs car
+
+            // Calculate percentages for bar chart
+            const maxCost = Math.max(pakhiCost, cngCost, rideshareCost, busCost);
+            const pakhiPercent = (pakhiCost / maxCost) * 100;
+            const cngPercent = (cngCost / maxCost) * 100;
+            const ridesharePercent = (rideshareCost / maxCost) * 100;
+            const busPercent = (busCost / maxCost) * 100;
 
             costResultDiv.innerHTML = `
-                <div class="text-left space-y-3 w-full">
-                    <div class="flex justify-between items-center">
-                        <span class="font-semibold">Pakhi Ride:</span>
-                        <span class="font-bold text-green-600 text-lg">৳${pakhiCost.toFixed(2)}</span>
+                <div class="bg-gradient-to-br from-green-50 to-emerald-50 p-8 rounded-2xl border border-green-200 space-y-6">
+                    <!-- Header -->
+                    <div class="text-center">
+                        <div class="inline-flex items-center gap-2 bg-green-500 text-white px-4 py-2 rounded-full text-sm font-semibold mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            Results for ${distance}km trip
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800">Cost Comparison</h3>
                     </div>
-                    <div class="flex justify-between items-center">
-                        <span class="font-semibold">CNG (Est.):</span>
-                        <span class="font-bold text-red-500 text-lg">৳${cngCost.toFixed(2)}</span>
+
+                    <!-- Cost Comparison Bars -->
+                    <div class="space-y-4">
+                        <!-- Pakhi -->
+                        <div class="space-y-2">
+                            <div class="flex justify-between items-center">
+                                <span class="font-semibold text-green-700 flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                    </svg>
+                                    Pakhi
+                                </span>
+                                <span class="font-bold text-green-700 text-lg">৳${pakhiCost.toFixed(2)}</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                <div class="bg-gradient-to-r from-green-400 to-green-500 h-3 rounded-full transition-all duration-1000" style="width: ${pakhiPercent}%"></div>
+                            </div>
+                        </div>
+
+                        <!-- CNG -->
+                        <div class="space-y-2">
+                            <div class="flex justify-between items-center">
+                                <span class="font-semibold text-yellow-700 flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2" />
+                                    </svg>
+                                    CNG
+                                </span>
+                                <span class="font-bold text-yellow-700 text-lg">৳${cngCost.toFixed(2)}</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                <div class="bg-gradient-to-r from-yellow-400 to-yellow-500 h-3 rounded-full transition-all duration-1000" style="width: ${cngPercent}%"></div>
+                            </div>
+                        </div>
+
+                        <!-- Rideshare -->
+                        <div class="space-y-2">
+                            <div class="flex justify-between items-center">
+                                <span class="font-semibold text-purple-700 flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                                    </svg>
+                                    Rideshare
+                                </span>
+                                <span class="font-bold text-purple-700 text-lg">৳${rideshareCost.toFixed(2)}</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                <div class="bg-gradient-to-r from-purple-400 to-purple-500 h-3 rounded-full transition-all duration-1000" style="width: ${ridesharePercent}%"></div>
+                            </div>
+                        </div>
+
+                        <!-- Bus -->
+                        <div class="space-y-2">
+                            <div class="flex justify-between items-center">
+                                <span class="font-semibold text-blue-700 flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                                    </svg>
+                                    Bus
+                                </span>
+                                <span class="font-bold text-blue-700 text-lg">৳${busCost.toFixed(2)}</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                <div class="bg-gradient-to-r from-blue-400 to-blue-500 h-3 rounded-full transition-all duration-1000" style="width: ${busPercent}%"></div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="border-t border-gray-300 my-2"></div>
-                    <div class="flex justify-between items-center mt-2">
-                        <span class="font-semibold text-xl">You Save:</span>
-                        <span class="font-extrabold text-green-700 text-2xl">৳${savings.toFixed(2)}</span>
+
+                    <!-- Savings Badge -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg border-2 border-green-200">
+                        <div class="text-center">
+                            <div class="inline-flex items-center gap-2 bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-semibold mb-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
+                                    </svg>
+                                Your Savings
+                            </div>
+                            <div class="text-3xl font-extrabold text-green-700 mb-1">৳${savings.toFixed(2)}</div>
+                            <p class="text-sm text-gray-600">vs CNG for this trip</p>
+                        </div>
+                    </div>
+
+                    <!-- Environmental Impact -->
+                    <div class="bg-emerald-100 p-4 rounded-xl border border-emerald-200">
+                        <div class="flex items-center justify-center gap-2 text-emerald-800">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <span class="font-semibold">Environmental Impact: ${co2Saved}kg CO₂ saved!</span>
+                        </div>
                     </div>
                 </div>
             `;
