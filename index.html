@@ -472,55 +472,55 @@
         </section>
 
         <!-- Plan Your Route Section -->
-        <section class="py-20 md:py-28 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
+        <section class="py-12 md:py-16 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
             <!-- Background decorative elements -->
             <div class="absolute top-0 left-0 w-72 h-72 bg-green-100 rounded-full -translate-x-36 -translate-y-36 opacity-20"></div>
             <div class="absolute bottom-0 right-0 w-96 h-96 bg-blue-50 rounded-full translate-x-48 translate-y-48 opacity-30"></div>
             
             <div class="container mx-auto px-6 mobile-padding relative z-10">
                 <!-- Section Header -->
-                <div class="text-center mb-16">
-                    <h2 class="text-4xl md:text-5xl font-extrabold mb-6 bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent" data-lang-key="planRouteTitle">Plan Your Route</h2>
-                    <p class="text-xl text-gray-600 max-w-2xl mx-auto">Calculate your savings and see how Pakhi beats other transport options</p>
+                <div class="text-center mb-8">
+                    <h2 class="text-3xl md:text-4xl font-extrabold mb-3 bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent" data-lang-key="planRouteTitle">Plan Your Route</h2>
+                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">Calculate your savings and see how Pakhi beats other transport options</p>
                 </div>
                 
-                <div class="bg-white p-8 md:p-12 rounded-3xl shadow-2xl grid lg:grid-cols-2 gap-12 max-w-7xl mx-auto card-hover">
+                <div class="bg-white p-6 md:p-8 rounded-2xl shadow-xl grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto card-hover">
                     <!-- Enhanced Route Planner Form -->
-                    <div class="slide-up space-y-8">
-                        <div class="flex items-center gap-3 mb-8">
-                            <div class="bg-gradient-to-br from-green-400 to-emerald-500 p-3 rounded-xl shadow-lg">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <div class="slide-up space-y-6">
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="bg-gradient-to-br from-green-400 to-emerald-500 p-2.5 rounded-xl shadow-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
                                 </svg>
                             </div>
-                            <h3 class="text-2xl font-bold text-gray-800">Route Calculator</h3>
+                            <h3 class="text-xl font-bold text-gray-800">Route Calculator</h3>
                         </div>
                         
-                        <form id="route-planner-form" class="space-y-6">
+                        <form id="route-planner-form" class="space-y-5">
                             <!-- From Input -->
                             <div class="relative">
-                                <label for="from" class="block text-sm font-semibold text-gray-700 mb-3" data-lang-key="fromLabel">From</label>
+                                <label for="from" class="block text-sm font-semibold text-gray-700 mb-2" data-lang-key="fromLabel">From</label>
                                 <div class="relative">
-                                    <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                                         </svg>
                                     </div>
-                                    <input type="text" id="from" data-lang-placeholder="fromPlaceholder" placeholder="e.g., Bashundhara R/A" class="block w-full pl-12 pr-12 py-4 text-lg bg-gray-50 border-2 border-gray-200 rounded-2xl focus:outline-none focus:ring-4 focus:ring-green-100 focus:border-green-500 transition-all duration-300 hover:border-gray-300">
-                                    <button type="button" id="use-location-btn" class="absolute inset-y-0 right-0 pr-4 flex items-center text-green-600 hover:text-green-700 transition-colors duration-300">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <input type="text" id="from" data-lang-placeholder="fromPlaceholder" placeholder="e.g., Bashundhara R/A" class="block w-full pl-10 pr-10 py-3 text-base bg-gray-50 border-2 border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-100 focus:border-green-500 transition-all duration-300 hover:border-gray-300">
+                                    <button type="button" id="use-location-btn" class="absolute inset-y-0 right-0 pr-3 flex items-center text-green-600 hover:text-green-700 transition-colors duration-300">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
                                         </svg>
                                     </button>
                                 </div>
-                                <p class="text-xs text-gray-500 mt-2">Click the arrow to use your current location</p>
+                                <p class="text-xs text-gray-500 mt-1">Click the arrow to use your current location</p>
                             </div>
                             
                             <!-- Swap Button -->
                             <div class="flex justify-center">
-                                <button type="button" id="swap-locations-btn" class="bg-gray-100 hover:bg-green-50 p-3 rounded-full transition-all duration-300 hover:scale-110 shadow-md hover:shadow-lg border-2 border-gray-200 hover:border-green-200">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-600 hover:text-green-600 transition-colors duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <button type="button" id="swap-locations-btn" class="bg-gray-100 hover:bg-green-50 p-2.5 rounded-full transition-all duration-300 hover:scale-110 shadow-md hover:shadow-lg border-2 border-gray-200 hover:border-green-200">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-600 hover:text-green-600 transition-colors duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4" />
                                     </svg>
                                 </button>
@@ -528,36 +528,36 @@
                             
                             <!-- To Input -->
                             <div class="relative">
-                                <label for="to" class="block text-sm font-semibold text-gray-700 mb-3" data-lang-key="toLabel">To</label>
+                                <label for="to" class="block text-sm font-semibold text-gray-700 mb-2" data-lang-key="toLabel">To</label>
                                 <div class="relative">
-                                    <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9" />
                                         </svg>
                                     </div>
-                                    <input type="text" id="to" data-lang-placeholder="toPlaceholder" placeholder="e.g., Gulshan 2" class="block w-full pl-12 pr-4 py-4 text-lg bg-gray-50 border-2 border-gray-200 rounded-2xl focus:outline-none focus:ring-4 focus:ring-green-100 focus:border-green-500 transition-all duration-300 hover:border-gray-300">
+                                    <input type="text" id="to" data-lang-placeholder="toPlaceholder" placeholder="e.g., Gulshan 2" class="block w-full pl-10 pr-4 py-3 text-base bg-gray-50 border-2 border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-100 focus:border-green-500 transition-all duration-300 hover:border-gray-300">
                                 </div>
                             </div>
                             
                             <!-- Distance Input -->
                             <div class="relative">
-                                <label for="distance" class="block text-sm font-semibold text-gray-700 mb-3" data-lang-key="distanceLabel">Estimated Distance (km)</label>
+                                <label for="distance" class="block text-sm font-semibold text-gray-700 mb-2" data-lang-key="distanceLabel">Estimated Distance (km)</label>
                                 <div class="relative">
-                                    <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-purple-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-purple-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
                                         </svg>
                                     </div>
-                                    <input type="number" id="distance" data-lang-placeholder="distancePlaceholder" placeholder="Enter distance in km" step="0.1" min="0.1" max="50" class="block w-full pl-12 pr-16 py-4 text-lg bg-gray-50 border-2 border-gray-200 rounded-2xl focus:outline-none focus:ring-4 focus:ring-green-100 focus:border-green-500 transition-all duration-300 hover:border-gray-300">
-                                    <div class="absolute inset-y-0 right-0 pr-4 flex items-center pointer-events-none">
-                                        <span class="text-gray-500 font-medium">km</span>
+                                    <input type="number" id="distance" data-lang-placeholder="distancePlaceholder" placeholder="Enter distance in km" step="0.1" min="0.1" max="50" class="block w-full pl-10 pr-12 py-3 text-base bg-gray-50 border-2 border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-100 focus:border-green-500 transition-all duration-300 hover:border-gray-300">
+                                    <div class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
+                                        <span class="text-gray-500 font-medium text-sm">km</span>
                                     </div>
                                 </div>
-                                <p class="text-xs text-gray-500 mt-2">Typical short trips in Dhaka: 1-5 km</p>
+                                <p class="text-xs text-gray-500 mt-1">Typical short trips in Dhaka: 1-5 km</p>
                             </div>
                             
                             <!-- Calculate Button -->
-                            <button type="submit" class="w-full bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white font-bold py-5 px-8 rounded-2xl text-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-green-200" data-lang-key="calculateBtn">
+                            <button type="submit" class="w-full bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white font-bold py-4 px-6 rounded-xl text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-green-200" data-lang-key="calculateBtn">
                                 <span class="flex items-center justify-center gap-3">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
@@ -570,17 +570,17 @@
                     
                     <!-- Enhanced Cost Comparison Display -->
                     <div class="fade-in">
-                        <div id="cost-comparison-result" class="h-full min-h-[400px]">
+                        <div id="cost-comparison-result" class="h-full min-h-[320px]">
                             <!-- Empty State -->
-                            <div id="empty-state" class="flex flex-col items-center justify-center h-full bg-gradient-to-br from-gray-50 to-gray-100 p-8 rounded-2xl border-2 border-dashed border-gray-200">
-                                <div class="mb-6">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24 text-gray-400 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <div id="empty-state" class="flex flex-col items-center justify-center h-full bg-gradient-to-br from-gray-50 to-gray-100 p-6 rounded-xl border-2 border-dashed border-gray-200">
+                                <div class="mb-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-gray-400 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
                                     </svg>
                                 </div>
-                                <h3 class="text-2xl font-bold text-gray-600 mb-4" data-lang-key="costComparisonTitle">Cost Comparison</h3>
-                                <p class="text-gray-500 text-center max-w-sm leading-relaxed" data-lang-key="costComparisonPlaceholder">Enter your route details to compare costs and see how much you can save with Pakhi!</p>
-                                <div class="mt-6 flex items-center gap-2 text-sm text-gray-400">
+                                <h3 class="text-xl font-bold text-gray-600 mb-3" data-lang-key="costComparisonTitle">Cost Comparison</h3>
+                                <p class="text-gray-500 text-center max-w-sm leading-relaxed text-sm" data-lang-key="costComparisonPlaceholder">Enter your route details to compare costs and see how much you can save with Pakhi!</p>
+                                <div class="mt-4 flex items-center gap-2 text-xs text-gray-400">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                                     </svg>
@@ -929,7 +929,7 @@
                 getAccessBtn: "আর্লি অ্যাক্সেস পান",
                 watchVideoBtn: "দেখুন পাখি কিভাবে কাজ করে",
                 whatIsPakhiTitle: "পাখি কি?",
-                whatIsPakhiSubtitle: "পাখি ঢাকাকে स्वच्छ, মজার এবং স্বল্প-দূরত্বের রাইডের সাথে সংযুক্ত করে। ট্র্যাফিক এড়িয়ে চলুন, জ্বালানী বাঁচান, শুধু রাইড করুন।",
+                whatIsPakhiSubtitle: "পাখি ঢাকাকে পরিচ্ছন্ন, মজার এবং স্বল্প-দূরত্বের রাইডের সাথে সংযুক্ত করে। ট্র্যাফিক এড়িয়ে চলুন, জ্বালানী বাঁচান, শুধু রাইড করুন।",
                 feature1Title: "ট্যাপ করে আনলক",
                 feature1Desc: "যেকোনো স্কুটার আনলক করতে আমাদের অ্যাপ দিয়ে QR কোড স্ক্যান করুন।",
                 feature2Title: "রাইড ও পার্ক",
